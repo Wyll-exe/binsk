@@ -1,0 +1,18 @@
+name: Amensia
+on: workflow_dispatch
+
+env:
+   NAME: Will
+
+jobs:
+   say-hello:
+      runs-on: ubuntu-latest
+      env:
+         ENTREPRISE: Creek
+      steps:
+         - name: Hi
+           run: echo "My name is $NAME ! Je boss pour $ENTREPRISE"
+           env:
+               DAY: Sunday
+          - name: "Sunday ?"
+            run: echo "Today is $DAY"

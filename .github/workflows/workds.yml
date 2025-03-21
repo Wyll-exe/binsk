@@ -1,0 +1,13 @@
+name: Amenenaia
+on: workflow_dispatch
+
+env:
+   NAME: Will
+
+jobs:
+   say-hello:
+      runs-on: ubuntu-latest
+      steps:
+         - name: "Dis Bonjour"
+           if: ${{ env.NAME != 'Will' }}
+           run: echo "My name is $NAME !"
