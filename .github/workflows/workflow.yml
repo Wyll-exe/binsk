@@ -10,6 +10,7 @@ jobs:
       env:
          ENTREPRISE: Creek
       steps:
+         - uses: actions/checkout@v2
          - name: Hi
            run: echo "My name is $NAME ! Je boss pour $ENTREPRISE"
            env:
