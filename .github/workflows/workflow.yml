@@ -15,5 +15,5 @@ jobs:
            run: echo "My name is $NAME ! Je boss pour $ENTREPRISE"
            env:
                DAY: Sunday
-          - name: "Sunday ?"
-            run: echo "Today is $DAY"
+         - name: "Sunday ?"
+           run: echo "Today is $DAY"
