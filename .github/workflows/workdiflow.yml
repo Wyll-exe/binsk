@@ -1,0 +1,11 @@
+name: Trigger Event
+on:
+   issues:
+      types: [opened]
+
+jobs:
+   new_issues:
+      runs-on: ubuntu-latest
+      steps:
+         - name: "New Issue"
+           run: echo "New issue opened !"
